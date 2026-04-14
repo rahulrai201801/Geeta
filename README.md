@@ -2,6 +2,8 @@
 ### A Spiritual Web Application for Life Guidance
 
 ---
+## http://localhost:5500/html/login.html
+---
 
 ## 📁 PART 1 — Project Structure
 
@@ -92,28 +94,6 @@ Response: { "success": true, "message": "Registration successful!" }
 Request:  { "username": "Arjuna", "password": "gita123" }
 Response: { "success": true, "userId": 1, "username": "Arjuna", "message": "..." }
 ```
-
-**POST /mentor**
-```json
-Request:  { "userId": 1, "query": "I am stressed about my exam results" }
-Response: {
-  "found": true,
-  "category": "stress",
-  "problem": "...",
-  "sanskrit": "योगस्थः कुरु कर्माणि...",
-  "meaning": "...",
-  "explanation": "...",
-  "lifeExample": "...",
-  "guidance": "..."
-}
-```
-
-**GET /quiz?userId=1**
-```json
-Response: [ { "id":1, "category":"stress", "question":"...", "optionA":"...", ..., "correctAnswer":"B" }, ... ]
-```
-
----
 
 ## 📖 PART 5 — 20 Shlokas Dataset (Categories)
 
